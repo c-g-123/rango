@@ -24,11 +24,11 @@ db.sqlite3-journal
 media/
 staticfiles/
 
-# Test / coverage
+# Test / coverage:
 .coverage
 htmlcov/
 .pytest_cache/
 
-# IDE
+# IDE:
 .vscode/
 .idea/
