@@ -1,6 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from django.urls import reverse
 
 
 def index(request):
@@ -13,6 +11,5 @@ def index(request):
 	return render(request, 'rango/index.html', context=context_dict)
 
 def about(request):
-	index_relative_url = reverse('rango:index')
-	index_absolute_url = request.build_absolute_uri(index_relative_url)
-	return HttpResponse('Rango says here is the about page. <a href="' + index_relative_url + '">Index</a>.')
+	context_dict = {'boldmessage': 'C'}
+	return render(request, 'rango/about.html', context=context_dict)
