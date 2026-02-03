@@ -5,6 +5,7 @@
 docker-compose.override.yml
 data/
 volumes/
+Dockerfile
 
 # Python:
 __pycache__/
